@@ -4,9 +4,9 @@ import './banner.css'
 const Banner = () => {
   return (
     <div className='banner'>
-      <span>
-        Notice: this environment is not real a environment
-      </span>
+      <div>
+       <sapn>Notice:</sapn>  this environment is not real a environment
+      </div>
       <a className='banner-btn'>
         Signup / Login
       </a>
