@@ -1,0 +1,22 @@
+.banner {
+  position: fixed;
+  bottom: 0;
+  z-index: 99999;
+  width: 100%;
+  color: white;
+  background-color: #900FF2;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-btn {
+  padding: .5rem;
+  background-color: #EAE097;
+  border-radius: 2rem;
+  border: 2px solid #1B1A38;
+  color: #1B1A38;
+  font-weight: 600;
+  cursor: pointer;
+}
