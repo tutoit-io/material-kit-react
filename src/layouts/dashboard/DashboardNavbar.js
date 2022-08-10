@@ -55,7 +55,7 @@ export default function DashboardNavbar({ onOpenSidebar }) {
         <Stack direction="row" alignItems="center" spacing={{ xs: 0.5, sm: 1.5 }}>
           <button onClick={() => {
             Mixpanel.track('clicked on Signup/login from banner')
-            window.open(`${window.location.origin}?isrecording=true&userId=${process.env.REACT_APP_USER_ID}`)
+            window.location.href = `${window.location.origin}?isrecording=true&userId=${process.env.REACT_APP_USER_ID}`
             }} className='nav-btn'> <Iconify icon="mdi:view-dashboard" />I have a problem</button>
           <LanguagePopover />
           <NotificationsPopover />
