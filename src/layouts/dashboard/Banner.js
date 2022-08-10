@@ -10,7 +10,7 @@ const Banner = () => {
       <div>
        <sapn>Notice:</sapn>  this environment is not a real environment
       </div>
-      <a onClick={() => Mixpanel.track('clicked on Signup/login from banner')} className='banner-btn' href={`${config.dashboard}?playground=true`}>
+      <a onClick={() => Mixpanel.track('clicked on Signup/login from banner')} className='banner-btn' href={`${config.dashboard}`}>
       <Iconify icon="mdi:exit-to-app" />
         Signup / Login
       </a>

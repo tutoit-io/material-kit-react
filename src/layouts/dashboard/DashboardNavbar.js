@@ -53,7 +53,10 @@ export default function DashboardNavbar({ onOpenSidebar }) {
         <Box sx={{ flexGrow: 1 }} />
 
         <Stack direction="row" alignItems="center" spacing={{ xs: 0.5, sm: 1.5 }}>
-          <button onClick={() => Mixpanel.track('clicked on Signup/login from banner')} className='nav-btn'> <Iconify icon="mdi:view-dashboard" />I have a problem</button>
+          <button onClick={() => {
+            Mixpanel.track('clicked on Signup/login from banner')
+            window.open(`${window.location.origin}?isrecording=true&userId=${process.env.USER_ID}`)
+            }} className='nav-btn'> <Iconify icon="mdi:view-dashboard" />I have a problem</button>
           <LanguagePopover />
           <NotificationsPopover />
           <AccountPopover />
