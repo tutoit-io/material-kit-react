@@ -6,8 +6,9 @@ import Iconify from '../../components/Iconify'
 const FloatingButton = () => {
   return (
     <a onClick={() => Mixpanel.track('clicked on dashboard floating button')} className='floating-btn' href={`${config.dashboard}?playground=true`}>
-      <Iconify icon="mdi:view-dashboard" />
-    Back To Dashboard</a>
+      <Iconify sx={{ fontSize: '2rem', marginRight: '.5rem' }} icon="mdi:view-dashboard" />
+      <span>Back To Dashboard</span>
+    </a>
   )
 }
 

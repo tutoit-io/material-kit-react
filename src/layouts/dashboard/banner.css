@@ -52,3 +52,11 @@
   display: flex;
   align-items: center;
 }
+
+.floating-btn span {
+  display: none;
+}
+
+.floating-btn:hover span {
+  display: block;
+}
