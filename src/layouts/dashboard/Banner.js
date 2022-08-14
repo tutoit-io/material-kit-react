@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <div className='banner'>
       <div>
-       <sapn>Notice:</sapn>  this environment is not a real environment
+       <span>Notice:</span>  this environment is not a real environment
       </div>
       <a onClick={() => Mixpanel.track('clicked on Signup/login from banner')} className='banner-btn' href={`${config.dashboard}`}>
       <Iconify sx={{ fontSize: '1.5rem', marginRight: '.5rem' }} icon="mdi:exit-to-app" />
