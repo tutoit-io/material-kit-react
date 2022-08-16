@@ -56,7 +56,7 @@ export default function DashboardNavbar({ onOpenSidebar }) {
           <button onClick={() => {
             Mixpanel.track('clicked on Signup/login from banner')
             window.location.href = `${window.location.origin}?isrecording=true&userId=${process.env.REACT_APP_USER_ID}`
-            }} className='nav-btn'> <Iconify icon="mdi:view-dashboard" />I have a problem</button>
+            }} className='nav-btn'> <Iconify icon="oi:chat" sx={{mr: 1}}/>I have a problem</button>
           <LanguagePopover />
           <NotificationsPopover />
           <AccountPopover />
