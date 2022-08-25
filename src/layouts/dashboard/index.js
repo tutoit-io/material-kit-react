@@ -6,6 +6,7 @@ import { styled } from '@mui/material/styles';
 import DashboardNavbar from './DashboardNavbar';
 import DashboardSidebar from './DashboardSidebar';
 import Banner from './Banner'
+import FloatingButton from './FloatingButton';
 
 // ----------------------------------------------------------------------
 
@@ -44,6 +45,7 @@ export default function DashboardLayout() {
         <Outlet />
       </MainStyle>
       <Banner/>
+      <FloatingButton />
     </RootStyle>
   );
 }
